@@ -1,0 +1,44 @@
+Based on this guys video https://www.youtube.com/watch?v=4fzAMdLKC5k
+
+Other useful urls
+	https://packaging.python.org/tutorials/distributing-packages/#requirements-for-packaging-and-distributing
+	http://python-packaging.readthedocs.io/en/latest/everything.html
+
+Required package on system:
+	cookiecutter
+	twine
+	wheel
+	tox
+
+1. 	Use cookiecutter with my repo at https://github.com/emilan21/python_cookiecutter_templet.git
+
+	OR
+
+	Make from scratch
+	.
+	├── aws_instance_status
+	│   ├── aws_instance_status.py
+	│   └── __init__.py
+	├── CHANGELOG.rst
+	├── DESCRIPTION.rst
+	├── docs
+	├── MANIFEST.in
+	├── READMEN.rst
+	├── requirements.txt
+	├── setup.cfg
+	├── setup.py
+	├── tests
+	│   ├── __init__.py
+	│   ├── test_aws_instance_status.py
+	│   └── tox.ini
+	├── TODO.txt
+
+2.	python -m venv "nameofvenv"
+
+3.	git init
+	git add .
+	git commit -m 'initial commit'
+
+4.	Add my code
+
+5. 	Add test for code

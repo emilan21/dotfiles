@@ -1,0 +1,27 @@
+source ~/.profile
+
+# Editor
+export EDITOR=vim
+
+xrdb -merge ~/.Xresources
+
+# git alias
+#alias cfg="/usr/bin/git --git-dir=/home/emilan/.cfg/ --work-tree=/home/emilan"
+#alias master="cfg checkout master"
+#alias work_desktop="cfg checkout work_desktop"
+
+# Go
+export GOPATH="$HOME/go"
+export PATH=$PATH:$GOPATH/bin
+
+# Rust
+#source $HOME/.cargo/env
+
+# SSH
+alias ssh="export TERM=xterm && ssh"
+
+# Make screen shots directory
+if [ ! -d ~/screen_shots ]; then mkdir ~/screen_shots; fi
+
+# cheat.sh
+alias cht='~/bin/cht.sh'
