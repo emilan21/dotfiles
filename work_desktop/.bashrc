@@ -11,18 +11,9 @@ if [ -f '~/.Xresources' ]; then
     xrdb -merge ~/.Xresources
 fi
 
-# git alias
-#alias cfg="/usr/bin/git --git-dir=/home/emilan/.cfg/ --work-tree=/home/emilan"
-#alias master="cfg checkout master"
-#alias work_desktop="cfg checkout work_desktop"
-
 # Go
 export GOPATH="$HOME/go"
 export PATH=$PATH:$GOPATH/bin
-export GOPATH="$PATH:$HOME/code/go-video"
-
-# Rust
-#source $HOME/.cargo/env
 
 alias ssh="export TERM=xterm && ssh"
 
